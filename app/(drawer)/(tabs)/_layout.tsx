@@ -4,11 +4,11 @@ import { Tabs } from 'expo-router'
 export default function TabsLayout() {
     return (
         <Tabs screenOptions={{ 
-            headerShown: false,
             tabBarActiveTintColor: "indigo" }}>
             <Tabs.Screen
                 name="(stack)"
                 options={{
+                    headerShown: false,
                     title: 'Stack',
                     tabBarIcon: ({ color }) => <Ionicons name="person-add-outline" size={28} color={color} />,
                 }}

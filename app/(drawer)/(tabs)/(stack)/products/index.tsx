@@ -14,7 +14,7 @@ const ProductsScreen = () => {
                         <Text>{item.price}</Text>
                         <Text>{item.description}</Text>
                         <Link href={{
-                            pathname: `/tabs/(stack)/products/[id]`,
+                            pathname: `/products/[id]`,
                             params: { id: item.id }
                             }} className='text-primary'>Ver Detalles</Link>
                     </View>

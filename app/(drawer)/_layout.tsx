@@ -8,6 +8,7 @@ export default function DrawerLayout() {
         <Drawer
             drawerContent={CustomDrawer}
             screenOptions={{
+                headerShown: false,
                 overlayColor: 'rgba(0, 0, 0, 0.5)',
                 drawerActiveTintColor: "indigo",
                 headerShadowVisible: false,
@@ -18,6 +19,14 @@ export default function DrawerLayout() {
             }
             }
         >
+            <Drawer.Screen
+                name="(tabs)"
+                options={{
+                    drawerLabel: 'Tabs + Stack',
+                    drawerIcon: ({ color, size }) => <Ionicons name="albums-outline" size={size} color={color} />,
+                    title: 'Tabs + Stack',
+                }}
+            />
             <Drawer.Screen
                 name="schedule/index"
                 options={{
